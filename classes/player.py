@@ -27,5 +27,3 @@ class Player(pygame.sprite.Sprite):
         # рисуем картинку на холсте
         screen.blit(self.surface, self.rect)
 
-git config --global user.name "ваш username с github"
-git config --global user.email "ваша почта с github"

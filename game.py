@@ -43,6 +43,9 @@ orange = Player(image="./images/orange.png", width=200, height=200, x=700, y=200
 # Создаем группу объектов (спрайтов)
 group_1 = pygame.sprite.Group(orange)  # Группа спрайтов, содержащая апельсин
 
+
+#
+
 # Цикл игры
 running = True  # Переменная для управления игровым циклом
 while running:
@@ -61,7 +64,7 @@ while running:
         print("БУМ БАБАХА КАМАЗ")  # Выводим сообщение о столкновении
         orange.x = random.randint(100, WIDTH)  # Перемещаем апельсин в случайное место по оси X
         orange.y = random.randint(100, HEIGHT)  # Перемещаем апельсин в случайное место по оси Y
-        player.speed += 10  # Увеличиваем скорость игрока
+        player.speed += 1  # Увеличиваем скорость игрока
 
     # Отслеживаем нажатия клавиш
     keys = pygame.key.get_pressed()  # Получаем список нажатых клавиш
